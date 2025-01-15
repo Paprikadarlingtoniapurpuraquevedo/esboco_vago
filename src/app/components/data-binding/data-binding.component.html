@@ -1,1 +1,21 @@
-<p>data-binding works!</p>
+<div class="row">
+    <div class="col-6">
+        Sei lá!
+        <p>Nome completo: {{fullName}}</p>
+    </div>
+    <span>{{isActive}}</span>
+    <div class="col-6">
+        <input type="text" [value]="fullName" name="" id="">
+        <br>
+        <input type="text" [value]="myPlace" name="" id="">
+        <br>
+        <div [class]="divClass" style="background-color: blue; height: 100px; width: 100px"></div>
+        <br>
+        <button class="success" (click)="showMessage()">Carregar</button>
+        <br>
+        <select (change)="colorChoice()">
+            <option value="Branco">Branco</option>
+            <option value="Preto">Preto</option>
+        </select>
+    </div>
+</div>
